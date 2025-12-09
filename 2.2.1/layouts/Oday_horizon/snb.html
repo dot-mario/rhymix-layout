@@ -99,6 +99,7 @@
 		</ul>
 	</div>
 	
+<!--@if(!($oi->site_column_c3 == 'yes' && $oi->use_snb_location == 'right'))-->
 {@
 	$oi->site_new_com_num = 10;
 	if(!$oi->site_new_com_srl_use) $oi->site_new_com_srl_use  ='no';
@@ -114,4 +115,5 @@
 	module_srls="{$site_new_com_srl_use}" 
 	list_count="{$oi->site_new_com_num}" />
 	<include target="banner.html"  cond="$oi->banner_sub_use == 'yes'" />
+<!--@end-->
 </div>
